@@ -4,7 +4,7 @@
   <groupId>com.github.nifty-gui</groupId>
   <artifactId>nifty-main</artifactId>
   <packaging>pom</packaging>
-  <version>1.4.3-SNAPSHOT</version>
+  <version>1.4.4-SNAPSHOT</version>
   <name>Nifty Main Parent Project</name>
   <modules>
     <module>nifty-core</module>
@@ -89,6 +89,11 @@
     </pluginManagement>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+      <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.3</version>
@@ -126,6 +131,7 @@
     <connection>scm:git:git://github.com/nifty-gui/nifty-gui.git</connection>
     <developerConnection>scm:git:git@github.com:nifty-gui/nifty-gui.git</developerConnection>
     <url>scm:git:https://github.com/nifty-gui/nifty-gui.git</url>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
